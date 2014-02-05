@@ -1,0 +1,41 @@
+{
+    "predef": [
+        "jasmine",
+        "describe",
+        "it",
+        "expect",
+        "runs",
+        "waitsFor",
+        "beforeEach",
+        "afterEach",
+        'spyOn',
+        "inject"
+    ],
+
+    "globals": {
+        "$": false,
+        "angular": false,
+        "monaca": false
+    },
+
+    "quotmark": true,
+    "unused": true,
+    "undef": true,
+    "noempty": true,
+    "trailing": true,
+    "noarg": true,
+
+    "indent": 4,
+    "maxlen": 120,
+    "maxparams": 3,
+    "maxdepth": 3,
+    "maxstatements": 20,
+    "maxcomplexity": 10,
+
+    "white": false,
+    "node" : true,
+    "es5" : true,
+    "browser" : true,
+    "strict": true,
+    "devel": true
+}

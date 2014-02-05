@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../vendors/jquery-2.1.0.js"></script>
+    <script src="../vendors/angular.js"></script>
+    <script src="../vendors/monaca.cloud.js"></script>
+    <script src="../vendors/monaca.cloud.push.js"></script>
+    <script src="../src/monaca-cloud-angular.js"></script>
+    <script src="../test/configs/debug.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+
+    <ul>
+        <li><button ng-click="register()">User.register</button></li>
+        <li><button ng-click="registerAndUnregister()">User.register &amp; User.unregister</button></li>
+        <li><button ng-click="deviceProperty()">Device.saveProperty &amp; Device.getProperty</button></li>
+        <li><button ng-click="testCollection()">Collection.insert &amp; Collection.findOne &amp; CollectionItem.update</button></li>
+        <li><button ng-click="sendMail()">Mailer.sendMail</button></li>
+    </ul>
+    
+    <h2>Result</h2>
+    <pre style="background:#ddd;">{{result|json}}</pre>
+    
+    <h2>Error</h2>
+    <pre style="background:#ddd;">{{error|json}}</pre>
+
+</body>
+</html>
